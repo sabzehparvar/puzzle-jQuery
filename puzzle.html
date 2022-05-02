@@ -21,12 +21,14 @@
       body {
         transition: 0.4s;
         min-width: 1000px;
+        background-color: #112B3C;
       }
       h3 {
         text-align: center;
         font-size: 40px;
         margin-bottom: 5vh;
         margin-top: 3vh;
+        color: #EFEFEF;
       }
       ul {
         width: 600px;
@@ -38,7 +40,7 @@
         height: 198px;
         float: left;
         list-style: none;
-        border: 1px solid black;
+        border: 1px solid #F66B0E;
         background-size: contain;
         font-size: 30px;
         color: white;
@@ -82,7 +84,8 @@
         background-size: contain;
       }
       #actualImage {
-        border: 1px solid black;
+        border:5px solid #EFEFEF;
+        border-radius: 10px;
         width: 250px;
         height: 250px;
         margin-right: 5%;
@@ -93,7 +96,7 @@
       #win {
         font-size: 20px;
         padding: 8px;
-        color: white;
+        color: #EFEFEF;
         border: 2px solid;
         text-align: center;
         transition: 0.3s;
@@ -101,12 +104,12 @@
       }
       #easy,
       #hard {
-        background-color: #333;
-        color: white;
-        border-radius: 10%;
+        background-color: #205375;
+        border-radius: 10px;
+        color: #EFEFEF;
         font-size: 20px;
         padding: 10px;
-        border: 1px solid #333;
+        border: 1px solid #EFEFEF;
       }
       #easy {
         margin-left: 25%;
@@ -115,11 +118,11 @@
         text-align: center;
         width: 80px;
         height: 40px;
-        background-color: white;
+        background-color: #EFEFEF;
         border-radius: 10%;
         font-size: 15px;
         line-height: 40px;
-        border: 1px solid white;
+        border: 1px solid #EFEFEF;
         margin-left: 45%;
         margin-top: 10px;
         display: none;
@@ -128,7 +131,7 @@
     </style>
   </head>
   <body>
-    <h3>puzzle</h3>
+    <h3>Puzzle Game</h3>
     <div id="actualImage"></div>
 
     <ul id="sortable">
@@ -142,7 +145,7 @@
       <li id="item8"></li>
       <li id="item9"></li>
     </ul>
-    <button id="easy" onclick="reset()">easy</button>
+    <button id="easy" class="btn btn-light" onclick="reset()">easy</button>
     <button id="hard" onclick="window.location.href='ver/puzzle-h.html'">
       hard
     </button>
